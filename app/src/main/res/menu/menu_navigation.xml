@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_popular"
+        android:title="@string/all"
+        android:icon="@drawable/ic_whatshot_black_24dp"
+        android:iconTint="@color/colorAccent"/>
+    <item
+        android:id="@+id/nav_search"
+        android:title="Search"
+        android:visible="false"
+        android:icon="@drawable/ic_search_black_24dp"
+        android:iconTint="@color/colorAccent"/>
+    <item
+        android:id="@+id/nav_favourites"
+        android:title="Favorite"
+        android:icon="@drawable/ic_star_black_24dp"
+        android:iconTint="@color/colorAccent" />
+</menu>

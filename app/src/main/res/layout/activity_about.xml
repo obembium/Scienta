@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        xmlns:tools="http://schemas.android.com/tools">
+
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:id="@+id/imageView2"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="10dp"
+            android:layout_alignRight="@+id/imageView3"
+            android:layout_alignEnd="@+id/imageView3"
+            android:src="@drawable/peter"
+            tools:src="@drawable/peter"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Peter Ihaza"
+            android:id="@+id/user1"
+            android:textSize="@dimen/abc_text_size_headline_material"
+            android:layout_alignTop="@+id/imageView2"
+            android:layout_alignLeft="@+id/linkedin_peter"
+            android:layout_alignStart="@+id/linkedin_peter"/>
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:id="@+id/imageView3"
+            android:layout_below="@+id/imageView2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/peter"
+            android:visibility="invisible"
+            tools:src="@drawable/peter"
+            android:layout_marginRight="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:visibility="invisible"
+            android:id="@+id/user2"
+            android:layout_alignTop="@+id/imageView3"
+            android:layout_toRightOf="@+id/imageView3"
+            android:layout_toEndOf="@+id/imageView3"
+            android:textSize="@dimen/abc_text_size_headline_material"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Test Project"
+            android:id="@+id/email"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/abc_text_size_headline_material"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Scienta Consulting"
+            android:id="@+id/empresa"
+            android:layout_above="@+id/email"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/abc_text_size_headline_material"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:linksClickable="true"
+            android:visibility="invisible"
+            android:layout_below="@+id/user2"
+            android:layout_toRightOf="@+id/imageView3"
+            android:layout_toEndOf="@+id/imageView3"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:linksClickable="true"
+            android:text="linkedin.com/in/peterihaza/"
+            android:id="@+id/linkedin_peter"
+            android:layout_below="@+id/user1"
+            android:layout_alignLeft="@+id/user2"
+            android:layout_alignStart="@+id/user2"
+            android:layout_marginTop="10dp"/>
+    </RelativeLayout>
+</LinearLayout>
